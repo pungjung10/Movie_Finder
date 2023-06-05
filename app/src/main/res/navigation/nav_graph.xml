@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movies">
+
+    <fragment
+        android:id="@+id/movies"
+        android:name="com.example.cinemo.movie.list.Movies"
+        android:label="Cinemo">
+        <action
+            android:id="@+id/action_movies_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_movies_to_favoriteMovieListFragment"
+            app:destination="@id/favoriteMovieListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.cinemo.movie.detail.MovieDetailFragment"
+        android:label="Cinemo" >
+        <argument
+            android:name="movie"
+            app:argType="com.example.cinemo.model.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteMovieListFragment"
+        android:name="com.example.cinemo.movie.favorite.FavoriteMovieListFragment"
+        android:label="Cinemo" >
+        <action
+            android:id="@+id/action_favoriteMovieListFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+</navigation>

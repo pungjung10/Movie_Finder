@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_130">130dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+    <dimen name="margin_300">300dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_32">32dp</dimen>
+
+    <dimen name="regular_font">16sp</dimen>
+    <dimen name="title_font">20sp</dimen>
+    <dimen name="big_font">22sp</dimen>
+
+
+
+
+
+
+</resources>
